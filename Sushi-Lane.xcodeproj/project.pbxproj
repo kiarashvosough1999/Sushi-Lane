@@ -1,0 +1,729 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DE5C52362A82860200E0242B /* Sushi_LaneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5C52352A82860200E0242B /* Sushi_LaneApp.swift */; };
+		DE5C523A2A82860200E0242B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE5C52392A82860200E0242B /* Assets.xcassets */; };
+		DE5C523E2A82860200E0242B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE5C523D2A82860200E0242B /* Preview Assets.xcassets */; };
+		DE5C52482A82860300E0242B /* Sushi_LaneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5C52472A82860300E0242B /* Sushi_LaneTests.swift */; };
+		DE5C52522A82860300E0242B /* Sushi_LaneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5C52512A82860300E0242B /* Sushi_LaneUITests.swift */; };
+		DE5C52542A82860300E0242B /* Sushi_LaneUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5C52532A82860300E0242B /* Sushi_LaneUITestsLaunchTests.swift */; };
+		DE5C52622A82869600E0242B /* KNetworking in Frameworks */ = {isa = PBXBuildFile; productRef = DE5C52612A82869600E0242B /* KNetworking */; };
+		DE5C526A2A82881500E0242B /* AsyncLoadingImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5C52692A82881500E0242B /* AsyncLoadingImage.swift */; };
+		DE5C526C2A82885000E0242B /* ScrollableLazyHStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5C526B2A82885000E0242B /* ScrollableLazyHStack.swift */; };
+		DE5C526F2A82888D00E0242B /* NetworkServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5C526E2A82888D00E0242B /* NetworkServices.swift */; };
+		DE5C52732A828A7200E0242B /* Factory in Frameworks */ = {isa = PBXBuildFile; productRef = DE5C52722A828A7200E0242B /* Factory */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DE5C52442A82860300E0242B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DE5C522A2A82860200E0242B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DE5C52312A82860200E0242B;
+			remoteInfo = "Sushi-Lane";
+		};
+		DE5C524E2A82860300E0242B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DE5C522A2A82860200E0242B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DE5C52312A82860200E0242B;
+			remoteInfo = "Sushi-Lane";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DE5C52322A82860200E0242B /* Sushi-Lane.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sushi-Lane.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE5C52352A82860200E0242B /* Sushi_LaneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sushi_LaneApp.swift; sourceTree = "<group>"; };
+		DE5C52392A82860200E0242B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DE5C523B2A82860200E0242B /* Sushi_Lane.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Sushi_Lane.entitlements; sourceTree = "<group>"; };
+		DE5C523D2A82860200E0242B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DE5C52432A82860300E0242B /* Sushi-LaneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sushi-LaneTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE5C52472A82860300E0242B /* Sushi_LaneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sushi_LaneTests.swift; sourceTree = "<group>"; };
+		DE5C524D2A82860300E0242B /* Sushi-LaneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sushi-LaneUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE5C52512A82860300E0242B /* Sushi_LaneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sushi_LaneUITests.swift; sourceTree = "<group>"; };
+		DE5C52532A82860300E0242B /* Sushi_LaneUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sushi_LaneUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DE5C52692A82881500E0242B /* AsyncLoadingImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncLoadingImage.swift; sourceTree = "<group>"; };
+		DE5C526B2A82885000E0242B /* ScrollableLazyHStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollableLazyHStack.swift; sourceTree = "<group>"; };
+		DE5C526E2A82888D00E0242B /* NetworkServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServices.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DE5C522F2A82860200E0242B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE5C52622A82869600E0242B /* KNetworking in Frameworks */,
+				DE5C52732A828A7200E0242B /* Factory in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE5C52402A82860300E0242B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE5C524A2A82860300E0242B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DE5C52292A82860200E0242B = {
+			isa = PBXGroup;
+			children = (
+				DE5C52342A82860200E0242B /* Sushi-Lane */,
+				DE5C52462A82860300E0242B /* Sushi-LaneTests */,
+				DE5C52502A82860300E0242B /* Sushi-LaneUITests */,
+				DE5C52332A82860200E0242B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DE5C52332A82860200E0242B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DE5C52322A82860200E0242B /* Sushi-Lane.app */,
+				DE5C52432A82860300E0242B /* Sushi-LaneTests.xctest */,
+				DE5C524D2A82860300E0242B /* Sushi-LaneUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DE5C52342A82860200E0242B /* Sushi-Lane */ = {
+			isa = PBXGroup;
+			children = (
+				DE5C52702A82891800E0242B /* UseCases */,
+				DE5C52662A8286DB00E0242B /* Entities */,
+				DE5C52642A8286A800E0242B /* Presentation */,
+				DE5C52632A82869E00E0242B /* Data */,
+				DE5C52352A82860200E0242B /* Sushi_LaneApp.swift */,
+				DE5C523B2A82860200E0242B /* Sushi_Lane.entitlements */,
+				DE5C523C2A82860200E0242B /* Preview Content */,
+			);
+			path = "Sushi-Lane";
+			sourceTree = "<group>";
+		};
+		DE5C523C2A82860200E0242B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				DE5C523D2A82860200E0242B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DE5C52462A82860300E0242B /* Sushi-LaneTests */ = {
+			isa = PBXGroup;
+			children = (
+				DE5C52472A82860300E0242B /* Sushi_LaneTests.swift */,
+			);
+			path = "Sushi-LaneTests";
+			sourceTree = "<group>";
+		};
+		DE5C52502A82860300E0242B /* Sushi-LaneUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DE5C52512A82860300E0242B /* Sushi_LaneUITests.swift */,
+				DE5C52532A82860300E0242B /* Sushi_LaneUITestsLaunchTests.swift */,
+			);
+			path = "Sushi-LaneUITests";
+			sourceTree = "<group>";
+		};
+		DE5C52632A82869E00E0242B /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				DE5C526D2A82888700E0242B /* Network */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		DE5C52642A8286A800E0242B /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				DE5C52672A8287F700E0242B /* DesignSystem */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		DE5C52662A8286DB00E0242B /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		DE5C52672A8287F700E0242B /* DesignSystem */ = {
+			isa = PBXGroup;
+			children = (
+				DE5C52682A82880100E0242B /* Components */,
+				DE5C52392A82860200E0242B /* Assets.xcassets */,
+			);
+			path = DesignSystem;
+			sourceTree = "<group>";
+		};
+		DE5C52682A82880100E0242B /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				DE5C52692A82881500E0242B /* AsyncLoadingImage.swift */,
+				DE5C526B2A82885000E0242B /* ScrollableLazyHStack.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		DE5C526D2A82888700E0242B /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				DE5C526E2A82888D00E0242B /* NetworkServices.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		DE5C52702A82891800E0242B /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DE5C52312A82860200E0242B /* Sushi-Lane */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE5C52572A82860300E0242B /* Build configuration list for PBXNativeTarget "Sushi-Lane" */;
+			buildPhases = (
+				DE5C522E2A82860200E0242B /* Sources */,
+				DE5C522F2A82860200E0242B /* Frameworks */,
+				DE5C52302A82860200E0242B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Sushi-Lane";
+			packageProductDependencies = (
+				DE5C52612A82869600E0242B /* KNetworking */,
+				DE5C52722A828A7200E0242B /* Factory */,
+			);
+			productName = "Sushi-Lane";
+			productReference = DE5C52322A82860200E0242B /* Sushi-Lane.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DE5C52422A82860300E0242B /* Sushi-LaneTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE5C525A2A82860300E0242B /* Build configuration list for PBXNativeTarget "Sushi-LaneTests" */;
+			buildPhases = (
+				DE5C523F2A82860300E0242B /* Sources */,
+				DE5C52402A82860300E0242B /* Frameworks */,
+				DE5C52412A82860300E0242B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DE5C52452A82860300E0242B /* PBXTargetDependency */,
+			);
+			name = "Sushi-LaneTests";
+			productName = "Sushi-LaneTests";
+			productReference = DE5C52432A82860300E0242B /* Sushi-LaneTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DE5C524C2A82860300E0242B /* Sushi-LaneUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE5C525D2A82860300E0242B /* Build configuration list for PBXNativeTarget "Sushi-LaneUITests" */;
+			buildPhases = (
+				DE5C52492A82860300E0242B /* Sources */,
+				DE5C524A2A82860300E0242B /* Frameworks */,
+				DE5C524B2A82860300E0242B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DE5C524F2A82860300E0242B /* PBXTargetDependency */,
+			);
+			name = "Sushi-LaneUITests";
+			productName = "Sushi-LaneUITests";
+			productReference = DE5C524D2A82860300E0242B /* Sushi-LaneUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DE5C522A2A82860200E0242B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					DE5C52312A82860200E0242B = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					DE5C52422A82860300E0242B = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = DE5C52312A82860200E0242B;
+					};
+					DE5C524C2A82860300E0242B = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = DE5C52312A82860200E0242B;
+					};
+				};
+			};
+			buildConfigurationList = DE5C522D2A82860200E0242B /* Build configuration list for PBXProject "Sushi-Lane" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DE5C52292A82860200E0242B;
+			packageReferences = (
+				DE5C52602A82869600E0242B /* XCRemoteSwiftPackageReference "KNetworking" */,
+				DE5C52712A828A7200E0242B /* XCRemoteSwiftPackageReference "Factory" */,
+			);
+			productRefGroup = DE5C52332A82860200E0242B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DE5C52312A82860200E0242B /* Sushi-Lane */,
+				DE5C52422A82860300E0242B /* Sushi-LaneTests */,
+				DE5C524C2A82860300E0242B /* Sushi-LaneUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DE5C52302A82860200E0242B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE5C523E2A82860200E0242B /* Preview Assets.xcassets in Resources */,
+				DE5C523A2A82860200E0242B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE5C52412A82860300E0242B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE5C524B2A82860300E0242B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DE5C522E2A82860200E0242B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE5C526C2A82885000E0242B /* ScrollableLazyHStack.swift in Sources */,
+				DE5C52362A82860200E0242B /* Sushi_LaneApp.swift in Sources */,
+				DE5C526F2A82888D00E0242B /* NetworkServices.swift in Sources */,
+				DE5C526A2A82881500E0242B /* AsyncLoadingImage.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE5C523F2A82860300E0242B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE5C52482A82860300E0242B /* Sushi_LaneTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE5C52492A82860300E0242B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE5C52522A82860300E0242B /* Sushi_LaneUITests.swift in Sources */,
+				DE5C52542A82860300E0242B /* Sushi_LaneUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DE5C52452A82860300E0242B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DE5C52312A82860200E0242B /* Sushi-Lane */;
+			targetProxy = DE5C52442A82860300E0242B /* PBXContainerItemProxy */;
+		};
+		DE5C524F2A82860300E0242B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DE5C52312A82860200E0242B /* Sushi-Lane */;
+			targetProxy = DE5C524E2A82860300E0242B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		DE5C52552A82860300E0242B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DE5C52562A82860300E0242B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		DE5C52582A82860300E0242B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Sushi-Lane/Sushi_Lane.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Sushi-Lane/Preview Content\"";
+				DEVELOPMENT_TEAM = 88P363PJC9;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "kiarash.vosough.com.Sushi-Lane";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "appletvos appletvsimulator iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,3";
+			};
+			name = Debug;
+		};
+		DE5C52592A82860300E0242B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Sushi-Lane/Sushi_Lane.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Sushi-Lane/Preview Content\"";
+				DEVELOPMENT_TEAM = 88P363PJC9;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "kiarash.vosough.com.Sushi-Lane";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "appletvos appletvsimulator iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,3";
+			};
+			name = Release;
+		};
+		DE5C525B2A82860300E0242B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 88P363PJC9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "kiarash.vosough.com.Sushi-LaneTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sushi-Lane.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Sushi-Lane";
+			};
+			name = Debug;
+		};
+		DE5C525C2A82860300E0242B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 88P363PJC9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "kiarash.vosough.com.Sushi-LaneTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sushi-Lane.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Sushi-Lane";
+			};
+			name = Release;
+		};
+		DE5C525E2A82860300E0242B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 88P363PJC9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "kiarash.vosough.com.Sushi-LaneUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Sushi-Lane";
+			};
+			name = Debug;
+		};
+		DE5C525F2A82860300E0242B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 88P363PJC9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "kiarash.vosough.com.Sushi-LaneUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Sushi-Lane";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DE5C522D2A82860200E0242B /* Build configuration list for PBXProject "Sushi-Lane" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE5C52552A82860300E0242B /* Debug */,
+				DE5C52562A82860300E0242B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE5C52572A82860300E0242B /* Build configuration list for PBXNativeTarget "Sushi-Lane" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE5C52582A82860300E0242B /* Debug */,
+				DE5C52592A82860300E0242B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE5C525A2A82860300E0242B /* Build configuration list for PBXNativeTarget "Sushi-LaneTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE5C525B2A82860300E0242B /* Debug */,
+				DE5C525C2A82860300E0242B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE5C525D2A82860300E0242B /* Build configuration list for PBXNativeTarget "Sushi-LaneUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE5C525E2A82860300E0242B /* Debug */,
+				DE5C525F2A82860300E0242B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DE5C52602A82869600E0242B /* XCRemoteSwiftPackageReference "KNetworking" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kiarashvosough1999/KNetworking.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		DE5C52712A828A7200E0242B /* XCRemoteSwiftPackageReference "Factory" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hmlongco/Factory";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DE5C52612A82869600E0242B /* KNetworking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE5C52602A82869600E0242B /* XCRemoteSwiftPackageReference "KNetworking" */;
+			productName = KNetworking;
+		};
+		DE5C52722A828A7200E0242B /* Factory */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE5C52712A828A7200E0242B /* XCRemoteSwiftPackageReference "Factory" */;
+			productName = Factory;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = DE5C522A2A82860200E0242B /* Project object */;
+}
