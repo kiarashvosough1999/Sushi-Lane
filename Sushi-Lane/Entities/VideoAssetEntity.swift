@@ -12,3 +12,5 @@ struct VideoAssetEntity {
     let titleDefault: String
     let tvShow: TVShowEntity
 }
+
+extension VideoAssetEntity: Decodable {}

@@ -7,5 +7,7 @@
 
 struct TVShowEntity {
     let titleDefault: String
-    let channelID: Int
+    let channelId: Int
 }
+
+extension TVShowEntity: Decodable {}
