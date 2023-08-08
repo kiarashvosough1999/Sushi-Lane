@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import KNetworking
 
 final class NetworkServices {
 
@@ -26,5 +27,12 @@ final class NetworkServices {
         )
         // Set cache for shared configuration, So that API work with it also use cache.
         session.configuration.urlCache = self.cache
+    }
+}
+
+extension NetworkServices {
+    
+    enum Gayways: String, GateWaysProtocol {
+        case base = "https://private-f88bc-christianegohring.apiary-mock.com"
     }
 }
