@@ -19,4 +19,12 @@ extension Container {
     var fetchVideoAssetsUseCase: Factory<FetchVideoAssetsUseCaseProtocol> {
         Factory(self) { self.network() }
     }
+
+    var createImageURLUseCase: Factory<CreateImageURLUseCaseProtocol> {
+        Factory(self) {
+            CreateImageURLUseCase()
+        }
+        .scope(.graph)
+        .timeToLive(60*1)
+    }
 }

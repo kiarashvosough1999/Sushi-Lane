@@ -6,6 +6,7 @@
 //
 
 import XCTest
+import Factory
 @testable import Sushi_Lane
 
 final class CreateImageURLUseCaseTests: XCTestCase, JSONLoader {
@@ -13,11 +14,12 @@ final class CreateImageURLUseCaseTests: XCTestCase, JSONLoader {
     private var sut: CreateImageURLUseCaseProtocol!
     
     override func setUpWithError() throws {
-        sut = CreateImageURLUseCase()
+        sut = Container.shared.createImageURLUseCase.resolve()
     }
 
     override func tearDownWithError() throws {
         sut = nil
+        Container.shared.reset()
     }
 
     func testCreatingImageURL() throws {
