@@ -24,7 +24,6 @@ extension Container {
         Factory(self) {
             CreateImageURLUseCase()
         }
-        .scope(.graph)
         .timeToLive(60*1)
     }
 }
