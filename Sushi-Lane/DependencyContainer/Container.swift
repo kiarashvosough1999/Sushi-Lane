@@ -13,7 +13,7 @@ extension Container {
         Factory(self) {
             NetworkServices()
         }
-        .scope(.singleton)
+        .scope(.cached)
     }
     
     var fetchVideoAssetsUseCase: Factory<FetchVideoAssetsUseCaseProtocol> {
