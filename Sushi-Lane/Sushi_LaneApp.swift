@@ -14,7 +14,7 @@ struct Sushi_LaneApp: App {
 
     var body: some Scene {
         WindowGroup {
-            if XCTIsTesting {
+            if XCTIsTesting == false {
                 SushiLaneView(viewModel: viewModel)
             }
         }

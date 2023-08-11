@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-extension Image {
+extension View {
     func loadingImage(width: CGFloat?, height: CGFloat?, padding: CGFloat) -> some View {
         modifier(LoadingImageModifier(width: width, height: height, padding: padding))
     }

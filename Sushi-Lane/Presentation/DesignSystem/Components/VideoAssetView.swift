@@ -13,6 +13,11 @@ import Factory
 struct VideoAssetViewModel {
     let videoAsset: VideoAssetEntity
     let focused: Bool
+    
+    var imageURL: URL? {
+        @Injected(\.createImageURLUseCase) var createImageURLUseCase
+        return try? createImageURLUseCase.createURL(for: videoAsset)
+    }
 }
 
 extension VideoAssetViewModel: Hashable {}
@@ -31,25 +36,23 @@ struct VideoAssetView: View {
         self.viewModel = viewModel
         self.width = width
     }
-
-    @Injected(\.createImageURLUseCase) private var createImageURLUseCase
     
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
-            if let imageURL = try? createImageURLUseCase.createURL(for: viewModel.videoAsset) {
+            if let imageURL = viewModel.imageURL {
                 AsyncLoadingImage(
                     url: imageURL,
                     width: width,
                     height: width/2
-                )
+                ) {
+                    placeHolderImage
+                }
+                .equatable()
+            } else {
+                placeHolderImage
             }
 
-            Text(viewModel.videoAsset.tvShow.titleDefault)
-                .lineLimit(nil)
-                .multilineTextAlignment(.leading)
-                .font(viewModel.focused ? .title2.bold() : .body)
-                .padding(.horizontal, 4)
-                .foregroundColor(viewModel.focused ? .green : .white)
+            title
         }
         .overlay {
             if viewModel.focused {
@@ -57,6 +60,22 @@ struct VideoAssetView: View {
                     .stroke(.green, lineWidth: 2)
             }
         }
+    }
+    
+    private var placeHolderImage: some View {
+        Image("no_image_high_res")
+            .resizable()
+            .renderingMode(.original)
+            .loadingImage(width: width, height: width/2, padding: 0)
+    }
+    
+    private var title: some View {
+        Text(viewModel.videoAsset.tvShow.titleDefault)
+            .lineLimit(nil)
+            .multilineTextAlignment(.leading)
+            .font(viewModel.focused ? .title2.bold() : .body)
+            .padding(.horizontal, 4)
+            .foregroundColor(viewModel.focused ? .green : .white)
     }
 }
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE2DCA5D2A86BF9200A1CA3D /* CreateImageURLUseCaseStubs.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2DCA5C2A86BF9200A1CA3D /* CreateImageURLUseCaseStubs.swift */; };
 		DE5C52362A82860200E0242B /* Sushi_LaneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5C52352A82860200E0242B /* Sushi_LaneApp.swift */; };
 		DE5C523A2A82860200E0242B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE5C52392A82860200E0242B /* Assets.xcassets */; };
 		DE5C523E2A82860200E0242B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE5C523D2A82860200E0242B /* Preview Assets.xcassets */; };
@@ -57,6 +58,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DE2DCA5C2A86BF9200A1CA3D /* CreateImageURLUseCaseStubs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateImageURLUseCaseStubs.swift; sourceTree = "<group>"; };
 		DE5C52322A82860200E0242B /* Sushi-Lane.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sushi-Lane.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE5C52352A82860200E0242B /* Sushi_LaneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sushi_LaneApp.swift; sourceTree = "<group>"; };
 		DE5C52392A82860200E0242B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -136,13 +138,6 @@
 			path = Units;
 			sourceTree = "<group>";
 		};
-		DE4FC99C2A864C1E007D333C /* Integration */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Integration;
-			sourceTree = "<group>";
-		};
 		DE5C52292A82860200E0242B = {
 			isa = PBXGroup;
 			children = (
@@ -190,7 +185,6 @@
 		DE5C52462A82860300E0242B /* Sushi-LaneTests */ = {
 			isa = PBXGroup;
 			children = (
-				DE4FC99C2A864C1E007D333C /* Integration */,
 				DE4FC99B2A864C17007D333C /* Units */,
 				DE5C52852A8291AE00E0242B /* Mocks */,
 				DE5C52822A82919800E0242B /* Utils */,
@@ -287,6 +281,7 @@
 			isa = PBXGroup;
 			children = (
 				DE5C52802A82912A00E0242B /* FetchVideoAssetsUseCaseStub.swift */,
+				DE2DCA5C2A86BF9200A1CA3D /* CreateImageURLUseCaseStubs.swift */,
 			);
 			path = Stubs;
 			sourceTree = "<group>";
@@ -524,6 +519,7 @@
 				DEAE959E2A8367B700D48253 /* CreateImageURLUseCaseTests.swift in Sources */,
 				DEBFA9102A8662730083087A /* SushiLaneViewModelTests.swift in Sources */,
 				DE5C52482A82860300E0242B /* Sushi_LaneTests.swift in Sources */,
+				DE2DCA5D2A86BF9200A1CA3D /* CreateImageURLUseCaseStubs.swift in Sources */,
 				DE5C52882A8291D600E0242B /* JSONLoader++VideoAssets.swift in Sources */,
 				DE5C52812A82912A00E0242B /* FetchVideoAssetsUseCaseStub.swift in Sources */,
 				DE5C52842A82919F00E0242B /* JSONLoader.swift in Sources */,
