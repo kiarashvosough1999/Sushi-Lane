@@ -42,9 +42,3 @@ extension SushiLaneViewModel {
         selectedVideoAsset = selectedVideoAsset == videoAsset.videoAsset ? nil : videoAsset.videoAsset
     }
 }
-
-// MARK: - Preview
-
-#if DEBUG
-final class SushiLaneViewModelPreview: ObservableObject {}
-#endif
