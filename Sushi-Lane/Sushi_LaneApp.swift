@@ -9,9 +9,24 @@ import SwiftUI
 
 @main
 struct Sushi_LaneApp: App {
+
+    private let viewModel = SushiLaneViewModel()
+
     var body: some Scene {
         WindowGroup {
-            EmptyView()
+            if XCTIsTesting {
+                SushiLaneView(viewModel: viewModel)
+            }
         }
+    }
+
+    private var XCTIsTesting: Bool {
+        ProcessInfo.processInfo.environment.keys.contains("XCTestBundlePath")
+        || ProcessInfo.processInfo.environment.keys.contains("XCTestConfigurationFilePath")
+        || ProcessInfo.processInfo.environment.keys.contains("XCTestSessionIdentifier")
+        || (ProcessInfo.processInfo.arguments.first
+            .flatMap(URL.init(fileURLWithPath:))
+            .map { $0.lastPathComponent == "xctest" || $0.pathExtension == "xctest" }
+            ?? false)
     }
 }
