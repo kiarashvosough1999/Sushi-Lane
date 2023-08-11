@@ -15,7 +15,7 @@ struct AsyncLoadingImage: View {
     private let height: CGFloat?
     private let padding: CGFloat
     
-    init(url: URL, width: CGFloat? = nil, height: CGFloat? = nil, padding: CGFloat = 16) {
+    init(url: URL, width: CGFloat? = nil, height: CGFloat? = nil, padding: CGFloat = 0) {
         self.url = url
         self.width = width
         self.height = height
@@ -29,18 +29,20 @@ struct AsyncLoadingImage: View {
                 ProgressView()
                     .progressViewStyle(.circular)
                     .animation(.spring(), value: phase.image)
-                    .frame(width: width, height: height)
+                    .frame(width: width, height: height, alignment: .center)
                     .padding(.all, padding)
             case .success(let image):
                 image
                     .resizable()
-                    .scaledToFit()
-                    .aspectRatio(1, contentMode: .fit)
-                    .frame(width: width, height: height)
-                    .padding(.all, padding)
+                    .renderingMode(.original)
+                    .loadingImage(width: width, height: height, padding: padding)
                     .animation(.spring(), value: phase.image)
             default:
-                Text("Can not load Image")
+                Image("no_image_high_res")
+                    .resizable()
+                    .renderingMode(.original)
+                    .loadingImage(width: width, height: height, padding: padding)
+                    .animation(.spring(), value: phase.image)
             }
         }
     }
