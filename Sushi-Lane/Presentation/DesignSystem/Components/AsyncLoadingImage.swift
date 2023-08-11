@@ -8,18 +8,26 @@
 import Foundation
 import SwiftUI
 
-struct AsyncLoadingImage: View {
+struct AsyncLoadingImage<P>: View where P: View {
     
     private let url: URL
     private let width: CGFloat?
     private let height: CGFloat?
     private let padding: CGFloat
+    private let placeHolderImage: () -> P
     
-    init(url: URL, width: CGFloat? = nil, height: CGFloat? = nil, padding: CGFloat = 16) {
+    init(
+        url: URL,
+        width: CGFloat? = nil,
+        height: CGFloat? = nil,
+        padding: CGFloat = 0,
+        placeHolderImage: @escaping () -> P
+    ) {
         self.url = url
         self.width = width
         self.height = height
         self.padding = padding
+        self.placeHolderImage = placeHolderImage
     }
 
     var body: some View {
@@ -27,21 +35,31 @@ struct AsyncLoadingImage: View {
             switch phase {
             case .empty:
                 ProgressView()
+                    .tint(.white)
                     .progressViewStyle(.circular)
                     .animation(.spring(), value: phase.image)
-                    .frame(width: width, height: height)
+                    .frame(width: width, height: height, alignment: .center)
                     .padding(.all, padding)
             case .success(let image):
                 image
                     .resizable()
-                    .scaledToFit()
-                    .aspectRatio(1, contentMode: .fit)
-                    .frame(width: width, height: height)
-                    .padding(.all, padding)
+                    .renderingMode(.original)
+                    .loadingImage(width: width, height: height, padding: padding)
                     .animation(.spring(), value: phase.image)
             default:
-                Text("Can not load Image")
+                placeHolderImage()
+                    .loadingImage(width: width, height: height, padding: padding)
+                    .animation(.spring(), value: phase.image)
             }
         }
+    }
+}
+
+extension AsyncLoadingImage: Equatable {
+    static func == (lhs: AsyncLoadingImage<P>, rhs: AsyncLoadingImage<P>) -> Bool {
+        lhs.url == rhs.url &&
+        lhs.width == rhs.width &&
+        lhs.height == rhs.height &&
+        lhs.padding == rhs.padding
     }
 }

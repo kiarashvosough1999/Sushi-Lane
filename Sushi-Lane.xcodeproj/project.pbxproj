@@ -7,13 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE2DCA5D2A86BF9200A1CA3D /* CreateImageURLUseCaseStubs.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2DCA5C2A86BF9200A1CA3D /* CreateImageURLUseCaseStubs.swift */; };
 		DE5C52362A82860200E0242B /* Sushi_LaneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5C52352A82860200E0242B /* Sushi_LaneApp.swift */; };
 		DE5C523A2A82860200E0242B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE5C52392A82860200E0242B /* Assets.xcassets */; };
 		DE5C523E2A82860200E0242B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE5C523D2A82860200E0242B /* Preview Assets.xcassets */; };
 		DE5C52482A82860300E0242B /* Sushi_LaneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5C52472A82860300E0242B /* Sushi_LaneTests.swift */; };
-		DE5C52522A82860300E0242B /* Sushi_LaneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5C52512A82860300E0242B /* Sushi_LaneUITests.swift */; };
-		DE5C52542A82860300E0242B /* Sushi_LaneUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5C52532A82860300E0242B /* Sushi_LaneUITestsLaunchTests.swift */; };
-		DE5C52622A82869600E0242B /* KNetworking in Frameworks */ = {isa = PBXBuildFile; productRef = DE5C52612A82869600E0242B /* KNetworking */; };
 		DE5C526A2A82881500E0242B /* AsyncLoadingImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5C52692A82881500E0242B /* AsyncLoadingImage.swift */; };
 		DE5C526C2A82885000E0242B /* ScrollableLazyHStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5C526B2A82885000E0242B /* ScrollableLazyHStack.swift */; };
 		DE5C526F2A82888D00E0242B /* NetworkServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5C526E2A82888D00E0242B /* NetworkServices.swift */; };
@@ -29,6 +27,15 @@
 		DE5C528B2A82924D00E0242B /* videoAssets.json in Resources */ = {isa = PBXBuildFile; fileRef = DE5C528A2A82924D00E0242B /* videoAssets.json */; };
 		DEAE959B2A8366C500D48253 /* CreateImageURLUseCaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAE959A2A8366C500D48253 /* CreateImageURLUseCaseProtocol.swift */; };
 		DEAE959E2A8367B700D48253 /* CreateImageURLUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAE959D2A8367B700D48253 /* CreateImageURLUseCaseTests.swift */; };
+		DEAE95A22A836E4300D48253 /* SushiLaneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAE95A12A836E4300D48253 /* SushiLaneView.swift */; };
+		DEAE95A42A836E5000D48253 /* SushiLaneViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAE95A32A836E5000D48253 /* SushiLaneViewModel.swift */; };
+		DEAE95A62A83740100D48253 /* LoadingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAE95A52A83740100D48253 /* LoadingState.swift */; };
+		DEAE95A82A83750400D48253 /* NotFoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAE95A72A83750400D48253 /* NotFoundView.swift */; };
+		DEB5D86A2A8419970007CF21 /* VideoAssetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB5D8692A8419970007CF21 /* VideoAssetView.swift */; };
+		DEB5D86D2A841B3B0007CF21 /* ContentSizeModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB5D86C2A841B3B0007CF21 /* ContentSizeModifier.swift */; };
+		DEBFA9102A8662730083087A /* SushiLaneViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFA90F2A8662730083087A /* SushiLaneViewModelTests.swift */; };
+		DEBFA9122A8665CD0083087A /* FirstAppearModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFA9112A8665CD0083087A /* FirstAppearModifier.swift */; };
+		DEBFA9142A86684B0083087A /* SushiImageModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFA9132A86684B0083087A /* SushiImageModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,16 +46,10 @@
 			remoteGlobalIDString = DE5C52312A82860200E0242B;
 			remoteInfo = "Sushi-Lane";
 		};
-		DE5C524E2A82860300E0242B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DE5C522A2A82860200E0242B /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = DE5C52312A82860200E0242B;
-			remoteInfo = "Sushi-Lane";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DE2DCA5C2A86BF9200A1CA3D /* CreateImageURLUseCaseStubs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateImageURLUseCaseStubs.swift; sourceTree = "<group>"; };
 		DE5C52322A82860200E0242B /* Sushi-Lane.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sushi-Lane.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE5C52352A82860200E0242B /* Sushi_LaneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sushi_LaneApp.swift; sourceTree = "<group>"; };
 		DE5C52392A82860200E0242B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -56,9 +57,6 @@
 		DE5C523D2A82860200E0242B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DE5C52432A82860300E0242B /* Sushi-LaneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sushi-LaneTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE5C52472A82860300E0242B /* Sushi_LaneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sushi_LaneTests.swift; sourceTree = "<group>"; };
-		DE5C524D2A82860300E0242B /* Sushi-LaneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sushi-LaneUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DE5C52512A82860300E0242B /* Sushi_LaneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sushi_LaneUITests.swift; sourceTree = "<group>"; };
-		DE5C52532A82860300E0242B /* Sushi_LaneUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sushi_LaneUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		DE5C52692A82881500E0242B /* AsyncLoadingImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncLoadingImage.swift; sourceTree = "<group>"; };
 		DE5C526B2A82885000E0242B /* ScrollableLazyHStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollableLazyHStack.swift; sourceTree = "<group>"; };
 		DE5C526E2A82888D00E0242B /* NetworkServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServices.swift; sourceTree = "<group>"; };
@@ -73,6 +71,16 @@
 		DE5C528A2A82924D00E0242B /* videoAssets.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = videoAssets.json; sourceTree = "<group>"; };
 		DEAE959A2A8366C500D48253 /* CreateImageURLUseCaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateImageURLUseCaseProtocol.swift; sourceTree = "<group>"; };
 		DEAE959D2A8367B700D48253 /* CreateImageURLUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateImageURLUseCaseTests.swift; sourceTree = "<group>"; };
+		DEAE95A12A836E4300D48253 /* SushiLaneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SushiLaneView.swift; sourceTree = "<group>"; };
+		DEAE95A32A836E5000D48253 /* SushiLaneViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SushiLaneViewModel.swift; sourceTree = "<group>"; };
+		DEAE95A52A83740100D48253 /* LoadingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingState.swift; sourceTree = "<group>"; };
+		DEAE95A72A83750400D48253 /* NotFoundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotFoundView.swift; sourceTree = "<group>"; };
+		DEAE95A92A83794800D48253 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		DEB5D8692A8419970007CF21 /* VideoAssetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoAssetView.swift; sourceTree = "<group>"; };
+		DEB5D86C2A841B3B0007CF21 /* ContentSizeModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentSizeModifier.swift; sourceTree = "<group>"; };
+		DEBFA90F2A8662730083087A /* SushiLaneViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SushiLaneViewModelTests.swift; sourceTree = "<group>"; };
+		DEBFA9112A8665CD0083087A /* FirstAppearModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstAppearModifier.swift; sourceTree = "<group>"; };
+		DEBFA9132A86684B0083087A /* SushiImageModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SushiImageModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +88,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE5C52622A82869600E0242B /* KNetworking in Frameworks */,
 				DE5C52732A828A7200E0242B /* Factory in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -92,22 +99,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DE5C524A2A82860300E0242B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DE4FC99A2A864C0A007D333C /* ViewModelTests */ = {
+			isa = PBXGroup;
+			children = (
+				DEBFA90F2A8662730083087A /* SushiLaneViewModelTests.swift */,
+			);
+			path = ViewModelTests;
+			sourceTree = "<group>";
+		};
+		DE4FC99B2A864C17007D333C /* Units */ = {
+			isa = PBXGroup;
+			children = (
+				DE4FC99A2A864C0A007D333C /* ViewModelTests */,
+				DEAE959C2A8367A600D48253 /* UseCasesTests */,
+			);
+			path = Units;
+			sourceTree = "<group>";
+		};
 		DE5C52292A82860200E0242B = {
 			isa = PBXGroup;
 			children = (
 				DE5C52342A82860200E0242B /* Sushi-Lane */,
 				DE5C52462A82860300E0242B /* Sushi-LaneTests */,
-				DE5C52502A82860300E0242B /* Sushi-LaneUITests */,
 				DE5C52332A82860200E0242B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -117,7 +133,6 @@
 			children = (
 				DE5C52322A82860200E0242B /* Sushi-Lane.app */,
 				DE5C52432A82860300E0242B /* Sushi-LaneTests.xctest */,
-				DE5C524D2A82860300E0242B /* Sushi-LaneUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -125,6 +140,7 @@
 		DE5C52342A82860200E0242B /* Sushi-Lane */ = {
 			isa = PBXGroup;
 			children = (
+				DEAE95A92A83794800D48253 /* Info.plist */,
 				DE5C527C2A828DAD00E0242B /* DependencyContainer */,
 				DE5C52702A82891800E0242B /* UseCases */,
 				DE5C52662A8286DB00E0242B /* Entities */,
@@ -148,22 +164,13 @@
 		DE5C52462A82860300E0242B /* Sushi-LaneTests */ = {
 			isa = PBXGroup;
 			children = (
-				DEAE959C2A8367A600D48253 /* UseCasesTests */,
+				DE4FC99B2A864C17007D333C /* Units */,
 				DE5C52852A8291AE00E0242B /* Mocks */,
 				DE5C52822A82919800E0242B /* Utils */,
 				DE5C527F2A82912100E0242B /* Stubs */,
 				DE5C52472A82860300E0242B /* Sushi_LaneTests.swift */,
 			);
 			path = "Sushi-LaneTests";
-			sourceTree = "<group>";
-		};
-		DE5C52502A82860300E0242B /* Sushi-LaneUITests */ = {
-			isa = PBXGroup;
-			children = (
-				DE5C52512A82860300E0242B /* Sushi_LaneUITests.swift */,
-				DE5C52532A82860300E0242B /* Sushi_LaneUITestsLaunchTests.swift */,
-			);
-			path = "Sushi-LaneUITests";
 			sourceTree = "<group>";
 		};
 		DE5C52632A82869E00E0242B /* Data */ = {
@@ -178,6 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				DE5C52672A8287F700E0242B /* DesignSystem */,
+				DEAE959F2A836E1100D48253 /* Features */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -194,6 +202,7 @@
 		DE5C52672A8287F700E0242B /* DesignSystem */ = {
 			isa = PBXGroup;
 			children = (
+				DEB5D86B2A841B2A0007CF21 /* Modifiers */,
 				DE5C52682A82880100E0242B /* Components */,
 				DE5C52392A82860200E0242B /* Assets.xcassets */,
 			);
@@ -203,8 +212,11 @@
 		DE5C52682A82880100E0242B /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				DEAE95A52A83740100D48253 /* LoadingState.swift */,
 				DE5C52692A82881500E0242B /* AsyncLoadingImage.swift */,
 				DE5C526B2A82885000E0242B /* ScrollableLazyHStack.swift */,
+				DEAE95A72A83750400D48253 /* NotFoundView.swift */,
+				DEB5D8692A8419970007CF21 /* VideoAssetView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -239,6 +251,7 @@
 			isa = PBXGroup;
 			children = (
 				DE5C52802A82912A00E0242B /* FetchVideoAssetsUseCaseStub.swift */,
+				DE2DCA5C2A86BF9200A1CA3D /* CreateImageURLUseCaseStubs.swift */,
 			);
 			path = Stubs;
 			sourceTree = "<group>";
@@ -284,6 +297,33 @@
 			path = UseCasesTests;
 			sourceTree = "<group>";
 		};
+		DEAE959F2A836E1100D48253 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				DEAE95A02A836E1A00D48253 /* SushiLane */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		DEAE95A02A836E1A00D48253 /* SushiLane */ = {
+			isa = PBXGroup;
+			children = (
+				DEAE95A12A836E4300D48253 /* SushiLaneView.swift */,
+				DEAE95A32A836E5000D48253 /* SushiLaneViewModel.swift */,
+			);
+			path = SushiLane;
+			sourceTree = "<group>";
+		};
+		DEB5D86B2A841B2A0007CF21 /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				DEB5D86C2A841B3B0007CF21 /* ContentSizeModifier.swift */,
+				DEBFA9112A8665CD0083087A /* FirstAppearModifier.swift */,
+				DEBFA9132A86684B0083087A /* SushiImageModifier.swift */,
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -301,7 +341,6 @@
 			);
 			name = "Sushi-Lane";
 			packageProductDependencies = (
-				DE5C52612A82869600E0242B /* KNetworking */,
 				DE5C52722A828A7200E0242B /* Factory */,
 			);
 			productName = "Sushi-Lane";
@@ -326,24 +365,6 @@
 			productReference = DE5C52432A82860300E0242B /* Sushi-LaneTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		DE5C524C2A82860300E0242B /* Sushi-LaneUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DE5C525D2A82860300E0242B /* Build configuration list for PBXNativeTarget "Sushi-LaneUITests" */;
-			buildPhases = (
-				DE5C52492A82860300E0242B /* Sources */,
-				DE5C524A2A82860300E0242B /* Frameworks */,
-				DE5C524B2A82860300E0242B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				DE5C524F2A82860300E0242B /* PBXTargetDependency */,
-			);
-			name = "Sushi-LaneUITests";
-			productName = "Sushi-LaneUITests";
-			productReference = DE5C524D2A82860300E0242B /* Sushi-LaneUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -361,10 +382,6 @@
 						CreatedOnToolsVersion = 14.3.1;
 						TestTargetID = DE5C52312A82860200E0242B;
 					};
-					DE5C524C2A82860300E0242B = {
-						CreatedOnToolsVersion = 14.3.1;
-						TestTargetID = DE5C52312A82860200E0242B;
-					};
 				};
 			};
 			buildConfigurationList = DE5C522D2A82860200E0242B /* Build configuration list for PBXProject "Sushi-Lane" */;
@@ -377,7 +394,6 @@
 			);
 			mainGroup = DE5C52292A82860200E0242B;
 			packageReferences = (
-				DE5C52602A82869600E0242B /* XCRemoteSwiftPackageReference "KNetworking" */,
 				DE5C52712A828A7200E0242B /* XCRemoteSwiftPackageReference "Factory" */,
 			);
 			productRefGroup = DE5C52332A82860200E0242B /* Products */;
@@ -386,7 +402,6 @@
 			targets = (
 				DE5C52312A82860200E0242B /* Sushi-Lane */,
 				DE5C52422A82860300E0242B /* Sushi-LaneTests */,
-				DE5C524C2A82860300E0242B /* Sushi-LaneUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -409,13 +424,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DE5C524B2A82860300E0242B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -424,13 +432,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE5C527B2A828D0A00E0242B /* NetworkServices+FetchVideoAssetsUseCaseProtocol.swift in Sources */,
+				DEAE95A22A836E4300D48253 /* SushiLaneView.swift in Sources */,
 				DE5C52792A828CDA00E0242B /* FetchVideoAssetsUseCaseProtocol.swift in Sources */,
 				DE5C526C2A82885000E0242B /* ScrollableLazyHStack.swift in Sources */,
 				DE5C52362A82860200E0242B /* Sushi_LaneApp.swift in Sources */,
+				DEAE95A82A83750400D48253 /* NotFoundView.swift in Sources */,
+				DEBFA9122A8665CD0083087A /* FirstAppearModifier.swift in Sources */,
+				DEAE95A62A83740100D48253 /* LoadingState.swift in Sources */,
+				DEB5D86A2A8419970007CF21 /* VideoAssetView.swift in Sources */,
 				DE5C52752A828C1A00E0242B /* VideoAssetEntity.swift in Sources */,
+				DEB5D86D2A841B3B0007CF21 /* ContentSizeModifier.swift in Sources */,
 				DE5C52772A828C3200E0242B /* TVShowEntity.swift in Sources */,
+				DEAE95A42A836E5000D48253 /* SushiLaneViewModel.swift in Sources */,
 				DE5C526F2A82888D00E0242B /* NetworkServices.swift in Sources */,
 				DE5C527E2A828DB500E0242B /* Container.swift in Sources */,
+				DEBFA9142A86684B0083087A /* SushiImageModifier.swift in Sources */,
 				DE5C526A2A82881500E0242B /* AsyncLoadingImage.swift in Sources */,
 				DEAE959B2A8366C500D48253 /* CreateImageURLUseCaseProtocol.swift in Sources */,
 			);
@@ -441,19 +457,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				DEAE959E2A8367B700D48253 /* CreateImageURLUseCaseTests.swift in Sources */,
+				DEBFA9102A8662730083087A /* SushiLaneViewModelTests.swift in Sources */,
 				DE5C52482A82860300E0242B /* Sushi_LaneTests.swift in Sources */,
+				DE2DCA5D2A86BF9200A1CA3D /* CreateImageURLUseCaseStubs.swift in Sources */,
 				DE5C52882A8291D600E0242B /* JSONLoader++VideoAssets.swift in Sources */,
 				DE5C52812A82912A00E0242B /* FetchVideoAssetsUseCaseStub.swift in Sources */,
 				DE5C52842A82919F00E0242B /* JSONLoader.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DE5C52492A82860300E0242B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DE5C52522A82860300E0242B /* Sushi_LaneUITests.swift in Sources */,
-				DE5C52542A82860300E0242B /* Sushi_LaneUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -464,11 +473,6 @@
 			isa = PBXTargetDependency;
 			target = DE5C52312A82860200E0242B /* Sushi-Lane */;
 			targetProxy = DE5C52442A82860300E0242B /* PBXContainerItemProxy */;
-		};
-		DE5C524F2A82860300E0242B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = DE5C52312A82860200E0242B /* Sushi-Lane */;
-			targetProxy = DE5C524E2A82860300E0242B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -595,6 +599,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Sushi-Lane/Info.plist";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -613,7 +618,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "kiarash.vosough.com.Sushi-Lane";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "appletvos appletvsimulator iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "appletvos appletvsimulator iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -635,6 +640,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Sushi-Lane/Info.plist";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -653,7 +659,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "kiarash.vosough.com.Sushi-Lane";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "appletvos appletvsimulator iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "appletvos appletvsimulator iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -708,50 +714,6 @@
 			};
 			name = Release;
 		};
-		DE5C525E2A82860300E0242B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 88P363PJC9;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
-				MACOSX_DEPLOYMENT_TARGET = 13.3;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "kiarash.vosough.com.Sushi-LaneUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Sushi-Lane";
-			};
-			name = Debug;
-		};
-		DE5C525F2A82860300E0242B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 88P363PJC9;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
-				MACOSX_DEPLOYMENT_TARGET = 13.3;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "kiarash.vosough.com.Sushi-LaneUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Sushi-Lane";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -782,26 +744,9 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DE5C525D2A82860300E0242B /* Build configuration list for PBXNativeTarget "Sushi-LaneUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DE5C525E2A82860300E0242B /* Debug */,
-				DE5C525F2A82860300E0242B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		DE5C52602A82869600E0242B /* XCRemoteSwiftPackageReference "KNetworking" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/kiarashvosough1999/KNetworking.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
-			};
-		};
 		DE5C52712A828A7200E0242B /* XCRemoteSwiftPackageReference "Factory" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/hmlongco/Factory";
@@ -813,11 +758,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		DE5C52612A82869600E0242B /* KNetworking */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = DE5C52602A82869600E0242B /* XCRemoteSwiftPackageReference "KNetworking" */;
-			productName = KNetworking;
-		};
 		DE5C52722A828A7200E0242B /* Factory */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = DE5C52712A828A7200E0242B /* XCRemoteSwiftPackageReference "Factory" */;

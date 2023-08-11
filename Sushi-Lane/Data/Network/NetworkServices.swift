@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import KNetworking
 
 final class NetworkServices {
 
@@ -31,8 +30,8 @@ final class NetworkServices {
 }
 
 extension NetworkServices {
-    
-    enum Gayways: String, GateWaysProtocol {
+
+    enum Gayways: String {
         case base = "https://private-f88bc-christianegohring.apiary-mock.com"
     }
 }
