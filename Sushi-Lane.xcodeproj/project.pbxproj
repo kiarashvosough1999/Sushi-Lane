@@ -12,8 +12,6 @@
 		DE5C523A2A82860200E0242B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE5C52392A82860200E0242B /* Assets.xcassets */; };
 		DE5C523E2A82860200E0242B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE5C523D2A82860200E0242B /* Preview Assets.xcassets */; };
 		DE5C52482A82860300E0242B /* Sushi_LaneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5C52472A82860300E0242B /* Sushi_LaneTests.swift */; };
-		DE5C52522A82860300E0242B /* Sushi_LaneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5C52512A82860300E0242B /* Sushi_LaneUITests.swift */; };
-		DE5C52542A82860300E0242B /* Sushi_LaneUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5C52532A82860300E0242B /* Sushi_LaneUITestsLaunchTests.swift */; };
 		DE5C526A2A82881500E0242B /* AsyncLoadingImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5C52692A82881500E0242B /* AsyncLoadingImage.swift */; };
 		DE5C526C2A82885000E0242B /* ScrollableLazyHStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5C526B2A82885000E0242B /* ScrollableLazyHStack.swift */; };
 		DE5C526F2A82888D00E0242B /* NetworkServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5C526E2A82888D00E0242B /* NetworkServices.swift */; };
@@ -67,8 +65,6 @@
 		DE5C52432A82860300E0242B /* Sushi-LaneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sushi-LaneTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE5C52472A82860300E0242B /* Sushi_LaneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sushi_LaneTests.swift; sourceTree = "<group>"; };
 		DE5C524D2A82860300E0242B /* Sushi-LaneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sushi-LaneUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DE5C52512A82860300E0242B /* Sushi_LaneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sushi_LaneUITests.swift; sourceTree = "<group>"; };
-		DE5C52532A82860300E0242B /* Sushi_LaneUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sushi_LaneUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		DE5C52692A82881500E0242B /* AsyncLoadingImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncLoadingImage.swift; sourceTree = "<group>"; };
 		DE5C526B2A82885000E0242B /* ScrollableLazyHStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollableLazyHStack.swift; sourceTree = "<group>"; };
 		DE5C526E2A82888D00E0242B /* NetworkServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServices.swift; sourceTree = "<group>"; };
@@ -143,7 +139,6 @@
 			children = (
 				DE5C52342A82860200E0242B /* Sushi-Lane */,
 				DE5C52462A82860300E0242B /* Sushi-LaneTests */,
-				DE5C52502A82860300E0242B /* Sushi-LaneUITests */,
 				DE5C52332A82860200E0242B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -192,15 +187,6 @@
 				DE5C52472A82860300E0242B /* Sushi_LaneTests.swift */,
 			);
 			path = "Sushi-LaneTests";
-			sourceTree = "<group>";
-		};
-		DE5C52502A82860300E0242B /* Sushi-LaneUITests */ = {
-			isa = PBXGroup;
-			children = (
-				DE5C52512A82860300E0242B /* Sushi_LaneUITests.swift */,
-				DE5C52532A82860300E0242B /* Sushi_LaneUITestsLaunchTests.swift */,
-			);
-			path = "Sushi-LaneUITests";
 			sourceTree = "<group>";
 		};
 		DE5C52632A82869E00E0242B /* Data */ = {
@@ -530,8 +516,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE5C52522A82860300E0242B /* Sushi_LaneUITests.swift in Sources */,
-				DE5C52542A82860300E0242B /* Sushi_LaneUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
