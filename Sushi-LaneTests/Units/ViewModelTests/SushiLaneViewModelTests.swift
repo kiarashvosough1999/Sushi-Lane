@@ -25,17 +25,14 @@ final class SushiLaneViewModelTests: XCTestCase, JSONLoader {
         XCTAssertEqual(sut.state, .notLoaded)
     }
 
-    func testLoadVideoAssetLoadingState() throws {
-        let fetchVideoAssetUseCase = FetchVideoAssetsUseCaseStub(delayInSeconds: 60, assets: [])
+    func testLoadVideoAssetLoadingState() async throws {
+        let fetchVideoAssetUseCase = FetchVideoAssetsUseCaseStub(delayInSeconds: 10, assets: [])
 
         Container.shared.fetchVideoAssetsUseCase.register { fetchVideoAssetUseCase }
-        
-        Task {
-            await sut.loadVideoAssets()
-        }
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
             XCTAssertEqual(self.sut.state, .loading)
         }
+        await sut.loadVideoAssets()
     }
 
     func testLoadVideoAssetLoadingSuccessfully() async throws {
