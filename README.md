@@ -15,8 +15,8 @@
 1. Chose `SwiftUI` To develop the UI more faster.
 2. Used `ViewModel`, as the States behind the Views were not complicated, and just needed to be seperated.
 3. Used `Factory` to handle dependency managment as it is great tools for testing and handling dependencies.
-4. Used light Clean-Architecture to keep layer seperated and follow **seperation of concerns**.
-5. Followed TDD to write several Unit Tests for Viewmodels and UseCases, and integrated test.
+4. Used light `Clean-Architecture` to keep layer seperated and follow **seperation of concerns**.
+5. Followed `TDD` to write several Unit Tests for Viewmodels and UseCases, and integrated test.
 
 ## 3th-Party Descision
 
@@ -32,7 +32,7 @@ As I mentioned, alongside Viewmodel, I consider using layer architecture(clean),
 
 By mentioning light clean, I meant the layers are separated, but not all components have concrete implementation in their own layer, as they did not contain specific logic or proccessing, instead I have implemented them in an outer layer which they use as dependency. As an example, `FetchVideoAssetsUseCaseProtocol` could have implementation which then use network layer(as injected dependency with interface) to fetch data, but as it has no logic, I did not created a concrete class for `FetchVideoAssetsUseCaseProtocol`, instead I have implemented `FetchVideoAssetsUseCaseProtocol` on `NetworkServices`.
 
->> I also considered using TCA for presentation layer, but this framework and redux pattern is more applicable for complex state managment purposes, create high learning curve to use and teach(to new joiners) it and uses lots of depedencies itself to operate which made it not a good choice for using it on this task.
+> I also considered using TCA for presentation layer, but this framework and redux pattern is more applicable for complex state managment purposes, create high learning curve to use and teach(to new joiners) it and uses lots of depedencies itself to operate which made it not a good choice for using it on this task.
 
 ## Readability / Maintainability Approaches
 
