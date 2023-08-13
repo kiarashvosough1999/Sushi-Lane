@@ -1,0 +1,39 @@
+name: iOS starter workflow
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+jobs:
+  build:
+    runs-on: ${{ matrix.runsOn }}
+    env:
+      DEVELOPER_DIR: "/Applications/${{ matrix.xcode }}/Contents/Developer"
+
+    steps:
+    - name: checkout
+      uses: actions/checkout@v3
+
+    - name: Build On ${{ matrix.name }}
+      continue-on-error: false
+      run: |
+        xcodebuild -scheme "Sushi-Lane" -destination '${{ matrix.destination }}' build
+        
+    - name: Test On ${{ matrix.name }}
+      continue-on-error: false
+      run: |
+        xcodebuild -scheme "Sushi-Lane" -destination '${{ matrix.destination }}' test
+    
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - destination: 'platform=iOS Simulator,name=iPhone 14'
+            runsOn: macos-13
+            xcode: "Xcode_14.3.1.app"
+            name: "iPhone 14, iOS Latest, Xcode 14.3.1"
+          - destination: 'platform=tvOS Simulator,name=Apple TV'
+            runsOn: macos-13
+            xcode: "Xcode_14.3.1.app"
+            name: "Apple TV, tvOS Latest, Xcode 14.3.1"
