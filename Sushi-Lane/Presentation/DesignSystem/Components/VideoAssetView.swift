@@ -13,11 +13,6 @@ import Factory
 struct VideoAssetViewModel {
     let videoAsset: VideoAssetEntity
     let focused: Bool
-    
-    var imageURL: URL? {
-        @Injected(\.createImageURLUseCase) var createImageURLUseCase
-        return try? createImageURLUseCase.createURL(for: videoAsset)
-    }
 }
 
 extension VideoAssetViewModel: Hashable {}
@@ -39,18 +34,14 @@ struct VideoAssetView: View {
     
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
-            if let imageURL = viewModel.imageURL {
-                AsyncLoadingImage(
-                    url: imageURL,
-                    width: width,
-                    height: width/2
-                ) {
-                    placeHolderImage
-                }
-                .equatable()
-            } else {
+            AsyncLoadingImage(
+                url: viewModel.videoAsset.imageURL,
+                width: width,
+                height: width/2
+            ) {
                 placeHolderImage
             }
+            .equatable()
 
             title
         }
@@ -92,7 +83,7 @@ struct VideoAssetView_Previews: PreviewProvider {
         VideoAssetView(
             viewModel: VideoAssetViewModel(
                 videoAsset: VideoAssetEntity(
-                    imageURL: "",
+                    imageURL: URL.applicationDirectory,
                     titleDefault: "Title",
                     tvShow: TVShowEntity(
                         titleDefault: "Title",

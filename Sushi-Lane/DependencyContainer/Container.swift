@@ -16,14 +16,22 @@ extension Container {
         .scope(.cached)
     }
     
+    var imageCache: Factory<ImageCacheProtocol> {
+        Factory(self) {
+            ImageCache()
+        }
+        .scope(.cached)
+    }
+    
     var fetchVideoAssetsUseCase: Factory<FetchVideoAssetsUseCaseProtocol> {
+        Factory(self) { FetchVideoAssetsUseCase() }.scope(.graph)
+    }
+    
+    var fetchVideoAssetsRespository: Factory<FetchVideoAssetsRespositoryProtocol> {
         Factory(self) { self.network() }
     }
 
-    var createImageURLUseCase: Factory<CreateImageURLUseCaseProtocol> {
-        Factory(self) {
-            CreateImageURLUseCase()
-        }
-        .timeToLive(60*1)
+    var sushiLaneViewModel: Factory<SushiLaneViewModel> {
+        Factory(self) { SushiLaneViewModel() }.scope(.shared)
     }
 }

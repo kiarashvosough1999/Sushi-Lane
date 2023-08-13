@@ -11,6 +11,7 @@ import Factory
 final class SushiLaneViewModel: ObservableObject {
 
     @LazyInjected(\.fetchVideoAssetsUseCase) private var fetchVideoAssetsUseCase
+    @LazyInjected(\.imageCache) private var imageCache
 
     @Published private var _state: LoadingState<[VideoAssetEntity]> = .notLoaded
     @Published private var selectedVideoAsset: VideoAssetEntity?

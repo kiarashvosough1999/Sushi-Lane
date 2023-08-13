@@ -7,6 +7,7 @@
 
 import Foundation
 import SwiftUI
+import Factory
 
 struct AsyncLoadingImage<P>: View where P: View {
     
@@ -29,29 +30,43 @@ struct AsyncLoadingImage<P>: View where P: View {
         self.padding = padding
         self.placeHolderImage = placeHolderImage
     }
+    
+    @Injected(\.imageCache) private var imageCache
 
     var body: some View {
-        AsyncImage(url: url) { phase in
-            switch phase {
-            case .empty:
-                ProgressView()
-                    .tint(.white)
-                    .progressViewStyle(.circular)
-                    .animation(.spring(), value: phase.image)
-                    .frame(width: width, height: height, alignment: .center)
-                    .padding(.all, padding)
-            case .success(let image):
-                image
-                    .resizable()
-                    .renderingMode(.original)
-                    .loadingImage(width: width, height: height, padding: padding)
-                    .animation(.spring(), value: phase.image)
-            default:
-                placeHolderImage()
-                    .loadingImage(width: width, height: height, padding: padding)
-                    .animation(.spring(), value: phase.image)
+        if let image = imageCache.image(for: url) {
+            image
+                .resizable()
+                .renderingMode(.original)
+                .loadingImage(width: width, height: height, padding: padding)
+        } else {
+            AsyncImage(url: url) { phase in
+                switch phase {
+                case .empty:
+                    ProgressView()
+                        .tint(.white)
+                        .progressViewStyle(.circular)
+                        .animation(.spring(), value: phase.image)
+                        .frame(width: width, height: height, alignment: .center)
+                        .padding(.all, padding)
+                case .success(let image):
+                    successImage(image: image)
+                default:
+                    placeHolderImage()
+                        .loadingImage(width: width, height: height, padding: padding)
+                        .animation(.spring(), value: phase.image)
+                }
             }
         }
+    }
+
+    private func successImage(image: Image) -> some View {
+        imageCache.cache(image: image, for: url)
+        return image
+            .resizable()
+            .renderingMode(.original)
+            .loadingImage(width: width, height: height, padding: padding)
+            .animation(.spring(), value: image)
     }
 }
 

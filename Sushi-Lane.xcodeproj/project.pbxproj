@@ -7,11 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DE2DCA5D2A86BF9200A1CA3D /* CreateImageURLUseCaseStubs.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2DCA5C2A86BF9200A1CA3D /* CreateImageURLUseCaseStubs.swift */; };
 		DE5C52362A82860200E0242B /* Sushi_LaneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5C52352A82860200E0242B /* Sushi_LaneApp.swift */; };
 		DE5C523A2A82860200E0242B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE5C52392A82860200E0242B /* Assets.xcassets */; };
 		DE5C523E2A82860200E0242B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE5C523D2A82860200E0242B /* Preview Assets.xcassets */; };
-		DE5C52482A82860300E0242B /* Sushi_LaneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5C52472A82860300E0242B /* Sushi_LaneTests.swift */; };
 		DE5C526A2A82881500E0242B /* AsyncLoadingImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5C52692A82881500E0242B /* AsyncLoadingImage.swift */; };
 		DE5C526C2A82885000E0242B /* ScrollableLazyHStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5C526B2A82885000E0242B /* ScrollableLazyHStack.swift */; };
 		DE5C526F2A82888D00E0242B /* NetworkServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5C526E2A82888D00E0242B /* NetworkServices.swift */; };
@@ -21,12 +19,15 @@
 		DE5C52792A828CDA00E0242B /* FetchVideoAssetsUseCaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5C52782A828CDA00E0242B /* FetchVideoAssetsUseCaseProtocol.swift */; };
 		DE5C527B2A828D0A00E0242B /* NetworkServices+FetchVideoAssetsUseCaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5C527A2A828D0A00E0242B /* NetworkServices+FetchVideoAssetsUseCaseProtocol.swift */; };
 		DE5C527E2A828DB500E0242B /* Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5C527D2A828DB500E0242B /* Container.swift */; };
-		DE5C52812A82912A00E0242B /* FetchVideoAssetsUseCaseStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5C52802A82912A00E0242B /* FetchVideoAssetsUseCaseStub.swift */; };
+		DE5C52812A82912A00E0242B /* FetchVideoAssetsStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5C52802A82912A00E0242B /* FetchVideoAssetsStub.swift */; };
 		DE5C52842A82919F00E0242B /* JSONLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5C52832A82919F00E0242B /* JSONLoader.swift */; };
 		DE5C52882A8291D600E0242B /* JSONLoader++VideoAssets.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5C52872A8291D600E0242B /* JSONLoader++VideoAssets.swift */; };
 		DE5C528B2A82924D00E0242B /* videoAssets.json in Resources */ = {isa = PBXBuildFile; fileRef = DE5C528A2A82924D00E0242B /* videoAssets.json */; };
-		DEAE959B2A8366C500D48253 /* CreateImageURLUseCaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAE959A2A8366C500D48253 /* CreateImageURLUseCaseProtocol.swift */; };
-		DEAE959E2A8367B700D48253 /* CreateImageURLUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAE959D2A8367B700D48253 /* CreateImageURLUseCaseTests.swift */; };
+		DE77BE272A88C4260045E8A9 /* FetchVideoAssetsRespositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE77BE262A88C4260045E8A9 /* FetchVideoAssetsRespositoryProtocol.swift */; };
+		DE77BE2A2A88C6820045E8A9 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE77BE292A88C6820045E8A9 /* ImageCache.swift */; };
+		DE77BE2D2A88E5540045E8A9 /* SushiLaneViewModelIntegratedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE77BE2C2A88E5540045E8A9 /* SushiLaneViewModelIntegratedTests.swift */; };
+		DEAE959B2A8366C500D48253 /* ImageCacheProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAE959A2A8366C500D48253 /* ImageCacheProtocol.swift */; };
+		DEAE959E2A8367B700D48253 /* FetchVideoAssetsUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAE959D2A8367B700D48253 /* FetchVideoAssetsUseCaseTests.swift */; };
 		DEAE95A22A836E4300D48253 /* SushiLaneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAE95A12A836E4300D48253 /* SushiLaneView.swift */; };
 		DEAE95A42A836E5000D48253 /* SushiLaneViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAE95A32A836E5000D48253 /* SushiLaneViewModel.swift */; };
 		DEAE95A62A83740100D48253 /* LoadingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAE95A52A83740100D48253 /* LoadingState.swift */; };
@@ -49,14 +50,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		DE2DCA5C2A86BF9200A1CA3D /* CreateImageURLUseCaseStubs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateImageURLUseCaseStubs.swift; sourceTree = "<group>"; };
 		DE5C52322A82860200E0242B /* Sushi-Lane.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sushi-Lane.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE5C52352A82860200E0242B /* Sushi_LaneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sushi_LaneApp.swift; sourceTree = "<group>"; };
 		DE5C52392A82860200E0242B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE5C523B2A82860200E0242B /* Sushi_Lane.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Sushi_Lane.entitlements; sourceTree = "<group>"; };
 		DE5C523D2A82860200E0242B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DE5C52432A82860300E0242B /* Sushi-LaneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sushi-LaneTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DE5C52472A82860300E0242B /* Sushi_LaneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sushi_LaneTests.swift; sourceTree = "<group>"; };
 		DE5C52692A82881500E0242B /* AsyncLoadingImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncLoadingImage.swift; sourceTree = "<group>"; };
 		DE5C526B2A82885000E0242B /* ScrollableLazyHStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollableLazyHStack.swift; sourceTree = "<group>"; };
 		DE5C526E2A82888D00E0242B /* NetworkServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServices.swift; sourceTree = "<group>"; };
@@ -65,12 +64,16 @@
 		DE5C52782A828CDA00E0242B /* FetchVideoAssetsUseCaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchVideoAssetsUseCaseProtocol.swift; sourceTree = "<group>"; };
 		DE5C527A2A828D0A00E0242B /* NetworkServices+FetchVideoAssetsUseCaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworkServices+FetchVideoAssetsUseCaseProtocol.swift"; sourceTree = "<group>"; };
 		DE5C527D2A828DB500E0242B /* Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Container.swift; sourceTree = "<group>"; };
-		DE5C52802A82912A00E0242B /* FetchVideoAssetsUseCaseStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchVideoAssetsUseCaseStub.swift; sourceTree = "<group>"; };
+		DE5C52802A82912A00E0242B /* FetchVideoAssetsStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchVideoAssetsStub.swift; sourceTree = "<group>"; };
 		DE5C52832A82919F00E0242B /* JSONLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONLoader.swift; sourceTree = "<group>"; };
 		DE5C52872A8291D600E0242B /* JSONLoader++VideoAssets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSONLoader++VideoAssets.swift"; sourceTree = "<group>"; };
 		DE5C528A2A82924D00E0242B /* videoAssets.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = videoAssets.json; sourceTree = "<group>"; };
-		DEAE959A2A8366C500D48253 /* CreateImageURLUseCaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateImageURLUseCaseProtocol.swift; sourceTree = "<group>"; };
-		DEAE959D2A8367B700D48253 /* CreateImageURLUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateImageURLUseCaseTests.swift; sourceTree = "<group>"; };
+		DE77BE262A88C4260045E8A9 /* FetchVideoAssetsRespositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchVideoAssetsRespositoryProtocol.swift; sourceTree = "<group>"; };
+		DE77BE292A88C6820045E8A9 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
+		DE77BE2C2A88E5540045E8A9 /* SushiLaneViewModelIntegratedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SushiLaneViewModelIntegratedTests.swift; sourceTree = "<group>"; };
+		DE77BE2E2A88E8740045E8A9 /* Sushi-Lane.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Sushi-Lane.xctestplan"; sourceTree = "<group>"; };
+		DEAE959A2A8366C500D48253 /* ImageCacheProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacheProtocol.swift; sourceTree = "<group>"; };
+		DEAE959D2A8367B700D48253 /* FetchVideoAssetsUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchVideoAssetsUseCaseTests.swift; sourceTree = "<group>"; };
 		DEAE95A12A836E4300D48253 /* SushiLaneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SushiLaneView.swift; sourceTree = "<group>"; };
 		DEAE95A32A836E5000D48253 /* SushiLaneViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SushiLaneViewModel.swift; sourceTree = "<group>"; };
 		DEAE95A52A83740100D48253 /* LoadingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingState.swift; sourceTree = "<group>"; };
@@ -147,6 +150,7 @@
 				DE5C52642A8286A800E0242B /* Presentation */,
 				DE5C52632A82869E00E0242B /* Data */,
 				DE5C52352A82860200E0242B /* Sushi_LaneApp.swift */,
+				DE77BE2E2A88E8740045E8A9 /* Sushi-Lane.xctestplan */,
 				DE5C523B2A82860200E0242B /* Sushi_Lane.entitlements */,
 				DE5C523C2A82860200E0242B /* Preview Content */,
 			);
@@ -164,11 +168,11 @@
 		DE5C52462A82860300E0242B /* Sushi-LaneTests */ = {
 			isa = PBXGroup;
 			children = (
+				DE77BE2B2A88E53D0045E8A9 /* Integrated */,
 				DE4FC99B2A864C17007D333C /* Units */,
 				DE5C52852A8291AE00E0242B /* Mocks */,
 				DE5C52822A82919800E0242B /* Utils */,
 				DE5C527F2A82912100E0242B /* Stubs */,
-				DE5C52472A82860300E0242B /* Sushi_LaneTests.swift */,
 			);
 			path = "Sushi-LaneTests";
 			sourceTree = "<group>";
@@ -176,6 +180,7 @@
 		DE5C52632A82869E00E0242B /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				DE77BE282A88C67A0045E8A9 /* Persistent */,
 				DE5C526D2A82888700E0242B /* Network */,
 			);
 			path = Data;
@@ -233,8 +238,8 @@
 		DE5C52702A82891800E0242B /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
+				DE77BE252A88C4120045E8A9 /* Repositories */,
 				DE5C52782A828CDA00E0242B /* FetchVideoAssetsUseCaseProtocol.swift */,
-				DEAE959A2A8366C500D48253 /* CreateImageURLUseCaseProtocol.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -250,8 +255,7 @@
 		DE5C527F2A82912100E0242B /* Stubs */ = {
 			isa = PBXGroup;
 			children = (
-				DE5C52802A82912A00E0242B /* FetchVideoAssetsUseCaseStub.swift */,
-				DE2DCA5C2A86BF9200A1CA3D /* CreateImageURLUseCaseStubs.swift */,
+				DE5C52802A82912A00E0242B /* FetchVideoAssetsStub.swift */,
 			);
 			path = Stubs;
 			sourceTree = "<group>";
@@ -289,10 +293,35 @@
 			path = videoAssets;
 			sourceTree = "<group>";
 		};
+		DE77BE252A88C4120045E8A9 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				DEAE959A2A8366C500D48253 /* ImageCacheProtocol.swift */,
+				DE77BE262A88C4260045E8A9 /* FetchVideoAssetsRespositoryProtocol.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		DE77BE282A88C67A0045E8A9 /* Persistent */ = {
+			isa = PBXGroup;
+			children = (
+				DE77BE292A88C6820045E8A9 /* ImageCache.swift */,
+			);
+			path = Persistent;
+			sourceTree = "<group>";
+		};
+		DE77BE2B2A88E53D0045E8A9 /* Integrated */ = {
+			isa = PBXGroup;
+			children = (
+				DE77BE2C2A88E5540045E8A9 /* SushiLaneViewModelIntegratedTests.swift */,
+			);
+			path = Integrated;
+			sourceTree = "<group>";
+		};
 		DEAE959C2A8367A600D48253 /* UseCasesTests */ = {
 			isa = PBXGroup;
 			children = (
-				DEAE959D2A8367B700D48253 /* CreateImageURLUseCaseTests.swift */,
+				DEAE959D2A8367B700D48253 /* FetchVideoAssetsUseCaseTests.swift */,
 			);
 			path = UseCasesTests;
 			sourceTree = "<group>";
@@ -424,13 +453,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DE5C524B2A82860300E0242B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -441,12 +463,14 @@
 				DE5C527B2A828D0A00E0242B /* NetworkServices+FetchVideoAssetsUseCaseProtocol.swift in Sources */,
 				DEAE95A22A836E4300D48253 /* SushiLaneView.swift in Sources */,
 				DE5C52792A828CDA00E0242B /* FetchVideoAssetsUseCaseProtocol.swift in Sources */,
+				DE77BE272A88C4260045E8A9 /* FetchVideoAssetsRespositoryProtocol.swift in Sources */,
 				DE5C526C2A82885000E0242B /* ScrollableLazyHStack.swift in Sources */,
 				DE5C52362A82860200E0242B /* Sushi_LaneApp.swift in Sources */,
 				DEAE95A82A83750400D48253 /* NotFoundView.swift in Sources */,
 				DEBFA9122A8665CD0083087A /* FirstAppearModifier.swift in Sources */,
 				DEAE95A62A83740100D48253 /* LoadingState.swift in Sources */,
 				DEB5D86A2A8419970007CF21 /* VideoAssetView.swift in Sources */,
+				DE77BE2A2A88C6820045E8A9 /* ImageCache.swift in Sources */,
 				DE5C52752A828C1A00E0242B /* VideoAssetEntity.swift in Sources */,
 				DEB5D86D2A841B3B0007CF21 /* ContentSizeModifier.swift in Sources */,
 				DE5C52772A828C3200E0242B /* TVShowEntity.swift in Sources */,
@@ -455,7 +479,7 @@
 				DE5C527E2A828DB500E0242B /* Container.swift in Sources */,
 				DEBFA9142A86684B0083087A /* SushiImageModifier.swift in Sources */,
 				DE5C526A2A82881500E0242B /* AsyncLoadingImage.swift in Sources */,
-				DEAE959B2A8366C500D48253 /* CreateImageURLUseCaseProtocol.swift in Sources */,
+				DEAE959B2A8366C500D48253 /* ImageCacheProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -463,12 +487,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DEAE959E2A8367B700D48253 /* CreateImageURLUseCaseTests.swift in Sources */,
+				DEAE959E2A8367B700D48253 /* FetchVideoAssetsUseCaseTests.swift in Sources */,
 				DEBFA9102A8662730083087A /* SushiLaneViewModelTests.swift in Sources */,
-				DE5C52482A82860300E0242B /* Sushi_LaneTests.swift in Sources */,
-				DE2DCA5D2A86BF9200A1CA3D /* CreateImageURLUseCaseStubs.swift in Sources */,
 				DE5C52882A8291D600E0242B /* JSONLoader++VideoAssets.swift in Sources */,
-				DE5C52812A82912A00E0242B /* FetchVideoAssetsUseCaseStub.swift in Sources */,
+				DE5C52812A82912A00E0242B /* FetchVideoAssetsStub.swift in Sources */,
+				DE77BE2D2A88E5540045E8A9 /* SushiLaneViewModelIntegratedTests.swift in Sources */,
 				DE5C52842A82919F00E0242B /* JSONLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

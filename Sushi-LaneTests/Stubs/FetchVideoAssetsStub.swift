@@ -1,5 +1,5 @@
 //
-//  FetchVideoAssetsUseCaseStub.swift
+//  FetchVideoAssetsStub.swift
 //  Sushi-LaneTests
 //
 //  Created by Kiarash Vosough on 8/8/23.
@@ -8,7 +8,7 @@
 import Foundation
 @testable import Sushi_Lane
 
-final class FetchVideoAssetsUseCaseStub {
+final class FetchVideoAssetsStub {
 
     private let error: Error?
     private let delayInSeconds: UInt64
@@ -25,7 +25,7 @@ final class FetchVideoAssetsUseCaseStub {
     }
 }
 
-extension FetchVideoAssetsUseCaseStub: FetchVideoAssetsUseCaseProtocol {
+extension FetchVideoAssetsStub: FetchVideoAssetsUseCaseProtocol, FetchVideoAssetsRespositoryProtocol {
 
     func fetch() async throws -> [VideoAssetEntity] {
         try await Task.sleep(nanoseconds: delayInSeconds * NSEC_PER_SEC)

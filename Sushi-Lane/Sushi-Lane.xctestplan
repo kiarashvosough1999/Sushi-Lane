@@ -1,0 +1,38 @@
+{
+  "configurations" : [
+    {
+      "id" : "A96CC079-7B8E-4A6F-AD22-9D0648588854",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : {
+      "targets" : [
+        {
+          "containerPath" : "container:Sushi-Lane.xcodeproj",
+          "identifier" : "DE5C52312A82860200E0242B",
+          "name" : "Sushi-Lane"
+        }
+      ]
+    },
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:Sushi-Lane.xcodeproj",
+      "identifier" : "DE5C52312A82860200E0242B",
+      "name" : "Sushi-Lane"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:Sushi-Lane.xcodeproj",
+        "identifier" : "DE5C52422A82860300E0242B",
+        "name" : "Sushi-LaneTests"
+      }
+    }
+  ],
+  "version" : 1
+}
