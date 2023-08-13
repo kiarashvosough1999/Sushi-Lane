@@ -14,7 +14,9 @@ struct Sushi_LaneApp: App {
     var body: some Scene {
         WindowGroup {
             if XCTIsTesting == false {
-                SushiLaneView(viewModel: Container.shared.sushiLaneViewModel.resolve())
+                NavigationStack {
+                    SushiLaneView(viewModel: Container.shared.sushiLaneViewModel.resolve())
+                }
             }
         }
     }

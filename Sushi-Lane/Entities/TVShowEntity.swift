@@ -12,6 +12,3 @@ struct TVShowEntity {
 
 extension TVShowEntity: Decodable {}
 extension TVShowEntity: Hashable {}
-extension TVShowEntity: Identifiable {
-    var id: Int { hashValue }
-}

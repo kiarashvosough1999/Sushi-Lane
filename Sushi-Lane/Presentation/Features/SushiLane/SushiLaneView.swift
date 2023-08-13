@@ -42,13 +42,14 @@ struct SushiLaneView: View {
     private var horizontalList: some View {
         WithLoadingState(state: viewModel.state) { dataSource in
             ScrollableLazyHStack(dataSource: dataSource) { item in
-                VideoAssetView(viewModel: item, width: contentSize.width/2)
-                    .equatable()
-                    .frame(width: contentSize.width/2)
-                    .transition(.scale)
-                    .onTapGesture {
-                        viewModel.didSelectedVideo(item)
-                    }
+                NavigationLink {
+                    Text("Detail")
+                } label: {
+                    VideoAssetView(viewModel: item, width: contentSize.width/2)
+                        .equatable()
+                        .transition(.scale)
+                }
+                .buttonStyle(.focused)
             }
         }
         .onRetry {

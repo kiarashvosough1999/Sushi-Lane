@@ -28,7 +28,7 @@ where C: RandomAccessCollection, Content: View, ID: Hashable {
 
     var body: some View {
         ScrollView(.horizontal) {
-            LazyHStack(alignment: .top, spacing: 32) {
+            LazyHStack(alignment: .top, spacing: 16) {
                 ForEach(dataSource, id: idKeyPath) { item in
                     content(item)
                 }
