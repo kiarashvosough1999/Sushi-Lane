@@ -33,3 +33,7 @@ jobs:
             runsOn: macos-13
             xcode: "Xcode_14.3.1.app"
             name: "iPhone 14, iOS Latest, Xcode 14.3.1"
+          - destination: 'platform=tvOS Simulator,name=Apple TV'
+            runsOn: macos-13
+            xcode: "Xcode_14.3.1.app"
+            name: "Apple TV, tvOS Latest, Xcode 14.3.1"
