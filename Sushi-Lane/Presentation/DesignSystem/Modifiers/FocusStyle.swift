@@ -18,7 +18,7 @@ struct FocusedStyle: ButtonStyle {
     func makeBody(configuration: Self.Configuration) -> some View {
         configuration
             .label
-            .scaleEffect(focused ? 1 : 0.9)
-            .animation(.easeInOut(duration: 0.2), value: focused)
+            .scaleEffect(focused ? 1 : 0.7)
+            .animation(.spring(), value: focused)
     }
 }
