@@ -22,7 +22,7 @@ extension SushiLaneViewModel {
     var state: LoadingState<[VideoAssetViewModel]> {
         _state.map { entities in
             entities.map { entity in
-                VideoAssetViewModel(videoAsset: entity, focused: selectedVideoAsset == entity)
+                VideoAssetViewModel(videoAsset: entity)
             }
         }
     }
@@ -40,6 +40,7 @@ extension SushiLaneViewModel {
     }
 
     func didSelectedVideo(_ videoAsset: VideoAssetViewModel) {
-        selectedVideoAsset = selectedVideoAsset == videoAsset.videoAsset ? nil : videoAsset.videoAsset
+        guard selectedVideoAsset != videoAsset.videoAsset else { return }
+        selectedVideoAsset = videoAsset.videoAsset
     }
 }

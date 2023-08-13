@@ -39,7 +39,7 @@ final class SushiLaneViewModelTests: XCTestCase, JSONLoader {
     func testLoadVideoAssetLoadingSuccessfully() async throws {
         let assets = try videoAssets()
         let viewModels: [VideoAssetViewModel] = assets.map { entity in
-            VideoAssetViewModel(videoAsset: entity, focused: false)
+            VideoAssetViewModel(videoAsset: entity)
         }
         
         let fetchVideoAssetsStub = FetchVideoAssetsStub(

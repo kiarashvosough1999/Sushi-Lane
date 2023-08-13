@@ -26,6 +26,8 @@
 		DE77BE272A88C4260045E8A9 /* FetchVideoAssetsRespositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE77BE262A88C4260045E8A9 /* FetchVideoAssetsRespositoryProtocol.swift */; };
 		DE77BE2A2A88C6820045E8A9 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE77BE292A88C6820045E8A9 /* ImageCache.swift */; };
 		DE77BE2D2A88E5540045E8A9 /* SushiLaneViewModelIntegratedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE77BE2C2A88E5540045E8A9 /* SushiLaneViewModelIntegratedTests.swift */; };
+		DE9576D22A8947DB0096C7C9 /* FocusStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9576D12A8947DB0096C7C9 /* FocusStyle.swift */; };
+		DE9576D62A89581A0096C7C9 /* RandomColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9576D52A89581A0096C7C9 /* RandomColor.swift */; };
 		DEAE959B2A8366C500D48253 /* ImageCacheProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAE959A2A8366C500D48253 /* ImageCacheProtocol.swift */; };
 		DEAE959E2A8367B700D48253 /* FetchVideoAssetsUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAE959D2A8367B700D48253 /* FetchVideoAssetsUseCaseTests.swift */; };
 		DEAE95A22A836E4300D48253 /* SushiLaneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAE95A12A836E4300D48253 /* SushiLaneView.swift */; };
@@ -36,7 +38,6 @@
 		DEB5D86D2A841B3B0007CF21 /* ContentSizeModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB5D86C2A841B3B0007CF21 /* ContentSizeModifier.swift */; };
 		DEBFA9102A8662730083087A /* SushiLaneViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFA90F2A8662730083087A /* SushiLaneViewModelTests.swift */; };
 		DEBFA9122A8665CD0083087A /* FirstAppearModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFA9112A8665CD0083087A /* FirstAppearModifier.swift */; };
-		DEBFA9142A86684B0083087A /* SushiImageModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBFA9132A86684B0083087A /* SushiImageModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,8 @@
 		DE77BE292A88C6820045E8A9 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
 		DE77BE2C2A88E5540045E8A9 /* SushiLaneViewModelIntegratedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SushiLaneViewModelIntegratedTests.swift; sourceTree = "<group>"; };
 		DE77BE2E2A88E8740045E8A9 /* Sushi-Lane.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Sushi-Lane.xctestplan"; sourceTree = "<group>"; };
+		DE9576D12A8947DB0096C7C9 /* FocusStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusStyle.swift; sourceTree = "<group>"; };
+		DE9576D52A89581A0096C7C9 /* RandomColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomColor.swift; sourceTree = "<group>"; };
 		DEAE959A2A8366C500D48253 /* ImageCacheProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacheProtocol.swift; sourceTree = "<group>"; };
 		DEAE959D2A8367B700D48253 /* FetchVideoAssetsUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchVideoAssetsUseCaseTests.swift; sourceTree = "<group>"; };
 		DEAE95A12A836E4300D48253 /* SushiLaneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SushiLaneView.swift; sourceTree = "<group>"; };
@@ -83,7 +86,6 @@
 		DEB5D86C2A841B3B0007CF21 /* ContentSizeModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentSizeModifier.swift; sourceTree = "<group>"; };
 		DEBFA90F2A8662730083087A /* SushiLaneViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SushiLaneViewModelTests.swift; sourceTree = "<group>"; };
 		DEBFA9112A8665CD0083087A /* FirstAppearModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstAppearModifier.swift; sourceTree = "<group>"; };
-		DEBFA9132A86684B0083087A /* SushiImageModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SushiImageModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -348,7 +350,8 @@
 			children = (
 				DEB5D86C2A841B3B0007CF21 /* ContentSizeModifier.swift */,
 				DEBFA9112A8665CD0083087A /* FirstAppearModifier.swift */,
-				DEBFA9132A86684B0083087A /* SushiImageModifier.swift */,
+				DE9576D12A8947DB0096C7C9 /* FocusStyle.swift */,
+				DE9576D52A89581A0096C7C9 /* RandomColor.swift */,
 			);
 			path = Modifiers;
 			sourceTree = "<group>";
@@ -466,6 +469,7 @@
 				DE77BE272A88C4260045E8A9 /* FetchVideoAssetsRespositoryProtocol.swift in Sources */,
 				DE5C526C2A82885000E0242B /* ScrollableLazyHStack.swift in Sources */,
 				DE5C52362A82860200E0242B /* Sushi_LaneApp.swift in Sources */,
+				DE9576D62A89581A0096C7C9 /* RandomColor.swift in Sources */,
 				DEAE95A82A83750400D48253 /* NotFoundView.swift in Sources */,
 				DEBFA9122A8665CD0083087A /* FirstAppearModifier.swift in Sources */,
 				DEAE95A62A83740100D48253 /* LoadingState.swift in Sources */,
@@ -475,9 +479,9 @@
 				DEB5D86D2A841B3B0007CF21 /* ContentSizeModifier.swift in Sources */,
 				DE5C52772A828C3200E0242B /* TVShowEntity.swift in Sources */,
 				DEAE95A42A836E5000D48253 /* SushiLaneViewModel.swift in Sources */,
+				DE9576D22A8947DB0096C7C9 /* FocusStyle.swift in Sources */,
 				DE5C526F2A82888D00E0242B /* NetworkServices.swift in Sources */,
 				DE5C527E2A828DB500E0242B /* Container.swift in Sources */,
-				DEBFA9142A86684B0083087A /* SushiImageModifier.swift in Sources */,
 				DE5C526A2A82881500E0242B /* AsyncLoadingImage.swift in Sources */,
 				DEAE959B2A8366C500D48253 /* ImageCacheProtocol.swift in Sources */,
 			);

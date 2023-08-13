@@ -12,7 +12,6 @@ import Factory
 
 struct VideoAssetViewModel {
     let videoAsset: VideoAssetEntity
-    let focused: Bool
 }
 
 extension VideoAssetViewModel: Hashable {}
@@ -31,42 +30,34 @@ struct VideoAssetView: View {
         self.viewModel = viewModel
         self.width = width
     }
-    
+
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
-            AsyncLoadingImage(
-                url: viewModel.videoAsset.imageURL,
-                width: width,
-                height: width/2
-            ) {
-                placeHolderImage
-            }
-            .equatable()
-
+            AsyncLoadingImage(url: viewModel.videoAsset.imageURL)
+                .equatable()
             title
+            Spacer()
+            caption
         }
-        .overlay {
-            if viewModel.focused {
-                RoundedRectangle(cornerRadius: 16)
-                    .stroke(.green, lineWidth: 2)
-            }
+        .background {
+            Rectangle()
+                .fill(.randomColor)
         }
+        .cornerRadius(16)
+        .frame(width: width)
     }
-    
-    private var placeHolderImage: some View {
-        Image("no_image_high_res")
-            .resizable()
-            .renderingMode(.original)
-            .loadingImage(width: width, height: width/2, padding: 0)
-    }
-    
+
     private var title: some View {
         Text(viewModel.videoAsset.tvShow.titleDefault)
-            .lineLimit(nil)
-            .multilineTextAlignment(.leading)
-            .font(viewModel.focused ? .title2.bold() : .body)
-            .padding(.horizontal, 4)
-            .foregroundColor(viewModel.focused ? .green : .white)
+            .font(.headline)
+            .padding(24)
+            .bold()
+    }
+
+    private var caption: some View {
+        Text(viewModel.videoAsset.titleDefault)
+            .font(.caption)
+            .padding(24)
     }
 }
 
@@ -89,8 +80,7 @@ struct VideoAssetView_Previews: PreviewProvider {
                         titleDefault: "Title",
                         channelId: 12
                     )
-                ),
-                focused: false
+                )
             ),
             width: 200
         )

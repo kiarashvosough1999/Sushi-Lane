@@ -15,6 +15,3 @@ struct VideoAssetEntity {
 
 extension VideoAssetEntity: Decodable {}
 extension VideoAssetEntity: Hashable {}
-extension VideoAssetEntity: Identifiable {
-    var id: Int { hashValue }
-}
