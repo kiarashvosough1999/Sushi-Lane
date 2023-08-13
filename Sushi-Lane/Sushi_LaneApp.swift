@@ -6,16 +6,15 @@
 //
 
 import SwiftUI
+import Factory
 
 @main
 struct Sushi_LaneApp: App {
 
-    private let viewModel = SushiLaneViewModel()
-
     var body: some Scene {
         WindowGroup {
             if XCTIsTesting == false {
-                SushiLaneView(viewModel: viewModel)
+                SushiLaneView(viewModel: Container.shared.sushiLaneViewModel.resolve())
             }
         }
     }

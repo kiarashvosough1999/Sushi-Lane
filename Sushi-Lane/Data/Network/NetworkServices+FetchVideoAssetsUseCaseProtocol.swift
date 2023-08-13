@@ -7,7 +7,7 @@
 
 import Foundation
 
-extension NetworkServices: FetchVideoAssetsUseCaseProtocol {
+extension NetworkServices: FetchVideoAssetsRespositoryProtocol {
 
     func fetch() async throws -> [VideoAssetEntity] {
         var request = URLRequest(url: URL(string: Gayways.base.rawValue + "/popular/videos")!)

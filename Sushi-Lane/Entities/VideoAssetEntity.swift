@@ -8,7 +8,7 @@
 import Foundation
 
 struct VideoAssetEntity {
-    let imageURL: String
+    var imageURL: URL
     let titleDefault: String
     let tvShow: TVShowEntity
 }
